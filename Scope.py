@@ -16,3 +16,10 @@ print(f"enemies outside function: {enemies}")
 
 # General practice is to avoid modifying Global Scope variables, so the above is BAD!
 # A way around the above is to return the Global plus any modification that needs to take place.
+
+# Global Constants
+# Constants are generally considered to be UPPERCASE names
+
+PI = 3.14159
+URL = "https://www.google.com"
+TWITTER_HANDLE = "@JagexAsherz"
