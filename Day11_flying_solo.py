@@ -3,7 +3,7 @@
 from Day11_flying_solo_art import logo
 import random
 
-number_guess = random.randrange(1, 100)
+number_guess = random.randint(1, 100)
 
 print(logo)
 print("Welcome to the Number Guessing Game!")
