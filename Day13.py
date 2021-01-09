@@ -86,10 +86,30 @@
 # Challenges
 
 # 1.
-# Problem - Code wouldn't run
-# Solution - IF statment had a single = instead of a double ==
-number = int(input("Which number do you want to check?"))
-if number % 2 == 0:
-  print("This is an even number.")
+# # Problem - Code wouldn't run got a stack trace like so:
+# """
+# File "d:/Programming/Python/Hundred Days of code/Day13.py", line 94
+#     if number % 2 = 0:
+#                   ^
+# SyntaxError: invalid syntax
+# """
+# # # Solution - IF statment had a single = instead of a double ==
+# number = int(input("Which number do you want to check?"))
+# if number % 2 == 0:
+#   print("This is an even number.")
+# else:
+#   print("This is an odd number.")
+
+# 2.
+year = input("Which year do you want to check?")
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year.")
+    else:
+      print("Not leap year.")
+  else:
+    print("Leap year.")
 else:
-  print("This is an odd number.")
+  print("Not leap year.")
