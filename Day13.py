@@ -72,3 +72,12 @@
 #   print(b_list)
 
 # mutate([1,2,3,5,8,13])
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# TIPS
+"""
+* Take a Break
+* Ask a Friend (Another programmer)
+* Run your code often. Means you are testing small changes
+* Look online - Maybe Stack Overflow
+"""
