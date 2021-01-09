@@ -101,8 +101,15 @@
 #   print("This is an odd number.")
 
 # 2.
-year = input("Which year do you want to check?")
-
+# Problem - Once ran and entered a Year, got the following error:
+"""
+Traceback (most recent call last):
+  File "d:/Programming/Python/Hundred Days of code/Day13.py", line 105, in <module>
+    if year % 4 == 0:
+TypeError: not all arguments converted during string formatting
+"""
+# Solution - Turns out the Input is a STRING. Need to cast to an INT
+year = int(input("Which year do you want to check?"))
 if year % 4 == 0:
   if year % 100 == 0:
     if year % 400 == 0:
@@ -113,3 +120,5 @@ if year % 4 == 0:
     print("Leap year.")
 else:
   print("Not leap year.")
+
+# 3.
