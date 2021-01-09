@@ -12,6 +12,13 @@ def construct_string(first, data):
     print_string += f"{data['name']}, a {data['description']}, from {data['country']}"
     print(print_string)
 
+def check_answer(guess, a_followers, b_followers):
+    """Takes the users guess and follower counts and returns if they got it right or not"""
+    if a_followers > b_followers:
+        return guess == "a"
+    else:
+        return guess == "b"
+
 def play_game(a):
     """Plays the Game. Pass in the starting point"""
     correct_guesses = 0
@@ -50,7 +57,7 @@ def play_game(a):
         # Obtain Input on choice
         choice = input("Who has more followers? Type 'A' or 'B': ").lower()
         # Decide if decision is correct
-        if choice == "a" and a_followers > b_followers or choice == "b" and b_followers > a_followers:
+        if check_answer(choice, a_followers, b_followers):
             # increment score
             correct_guesses += 1
             # If Correct B becomes A and we start from the top
