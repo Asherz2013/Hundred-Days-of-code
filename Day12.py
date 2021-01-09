@@ -1,6 +1,6 @@
 # Number guessing game
 
-from Day11_flying_solo_art import logo
+from Day12_art import logo
 import random
 
 EASY_NO_TURNS = 10
