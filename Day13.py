@@ -101,24 +101,39 @@
 #   print("This is an odd number.")
 
 # 2.
-# Problem - Once ran and entered a Year, got the following error:
-"""
-Traceback (most recent call last):
-  File "d:/Programming/Python/Hundred Days of code/Day13.py", line 105, in <module>
-    if year % 4 == 0:
-TypeError: not all arguments converted during string formatting
-"""
-# Solution - Turns out the Input is a STRING. Need to cast to an INT
-year = int(input("Which year do you want to check?"))
-if year % 4 == 0:
-  if year % 100 == 0:
-    if year % 400 == 0:
-      print("Leap year.")
-    else:
-      print("Not leap year.")
-  else:
-    print("Leap year.")
-else:
-  print("Not leap year.")
+# # Problem - Once ran and entered a Year, got the following error:
+# """
+# Traceback (most recent call last):
+#   File "d:/Programming/Python/Hundred Days of code/Day13.py", line 105, in <module>
+#     if year % 4 == 0:
+# TypeError: not all arguments converted during string formatting
+# """
+# # Solution - Turns out the Input is a STRING. Need to cast to an INT
+# year = int(input("Which year do you want to check?"))
+# if year % 4 == 0:
+#   if year % 100 == 0:
+#     if year % 400 == 0:
+#       print("Leap year.")
+#     else:
+#       print("Not leap year.")
+#   else:
+#     print("Leap year.")
+# else:
+#   print("Not leap year.")
 
 # 3.
+"""
+Your program should print each number from 1 to 100 in turn.
+When the number is divisible by 3 then instead of printing the number it should print "Fizz".
+When the number is divisible by 5, then instead of printing the number it should print "Buzz".
+And if the number is divisible by both 3 and 5 e.g. 15 then instead of the number it should print "FizzBuzz"
+""" 
+for number in range(1, 101):
+  if number % 3 == 0 or number % 5 == 0:
+    print("FizzBuzz")
+  if number % 3 == 0:
+    print("Fizz")
+  if number % 5 == 0:
+    print("Buzz")
+  else:
+    print([number])
