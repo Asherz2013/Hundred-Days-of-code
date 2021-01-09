@@ -5,13 +5,15 @@ import random
 # Data is an Array of Dictionaries. Each Dictionary has 4 components: Name, Follower Count (millions), Description, Country
 
 def construct_string(first, data):
+    """Format the account data into a printable format"""
     print_string = "Compare A: "
     if not first:
         print_string = "Against B: "
-    print_string += f"{data['name']}, {data['description']}, from {data['country']}"
+    print_string += f"{data['name']}, a {data['description']}, from {data['country']}"
     print(print_string)
 
 def play_game(a):
+    """Plays the Game. Pass in the starting point"""
     correct_guesses = 0
     end_game = False
 
